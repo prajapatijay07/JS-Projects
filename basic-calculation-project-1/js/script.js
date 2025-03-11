@@ -2,12 +2,12 @@
 
 //  formula :- area = 1/2 * b * h
 
-// let b = 10, h = 5; 
-// let area = (0.5 * b * h);
+let b = 10, h = 5; 
+let a = (0.5 * b * h);
 
-// console.log("The Width  of Triangle is :",b);
-// console.log("The Height  of Triangle is :",h);
-// console.log("Area of the Triangle :", area);
+console.log("The Width  of Triangle is :",b);
+console.log("The Height  of Triangle is :",h);
+console.log("Area of the Triangle :", a);
 
 // Output :- The Width  of Triangle is : 10 , The Height  of Triangle is : 5 , Area of the Triangle: 25
 
