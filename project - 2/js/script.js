@@ -25,7 +25,7 @@ if (units > 150) {
     amount = amount + (amount * 0.2); 
 }
 
-console.log("Total Electricity Bill Amount is Rs.", amount); 
+console.log("Total Electricity Bill Amount is Rs.", amount);
 
 // Output :- Total Electricity Bill Amount is Rs. 885.6
 
@@ -94,7 +94,7 @@ if (a >= 18) {
 
 // 5. Write a javascript program to classify Age Groups.
 
-let age = 60;
+let age = 67;
 
 switch (true) {
     case (age >= 0 && age <= 12):
@@ -112,5 +112,6 @@ switch (true) {
     default:
         console.log("Invalid Age! Please enter a valid number.");
 }
+
 
 // Output :- Senior

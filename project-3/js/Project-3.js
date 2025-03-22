@@ -29,45 +29,42 @@
 // Example Output (if input is 5):
 // Factorial of 5 is: 120
 
-// 3. Write a JAVASCRIPT program to find the Armstrong number  list of a given number using a do while loop.
+// 3. Write a JAVASCRIPT program to find the Armstrong number list of a given number using a do while loop.
 
 // let maxNum = prompt("Enter a number:");
-// let currentNum = 1;
-
-// console.log("Armstrong numbers up to " , maxNum , " are:");
+// let num = 1;
 
 // do {
-//     let totalSum = 0;
-//     let originalNum = currentNum;
-//     let digitCount = 0;
-//     let tempNum = currentNum;
+//     let temp = num;
+//     let sum = 0;
+//     let digits = 0;
+//     let temp2 = num;
 
-//     while (tempNum > 0) {
-//         digitCount++;
-//         tempNum = tempNum / 10 - (tempNum / 10) % 1; 
+//     do {
+//         digits++;
+//         temp2 = temp2 / 10 - (temp2 / 10) % 1; 
+//     } while (temp2 > 0);
+
+//     do {
+//         let digit = temp % 10;
+//         let power = 1;
+//         let i = 0;
+
+//         do {
+//             power = power * digit;
+//             i++;
+//         } while (i < digits);
+
+//         sum = sum + power;
+//         temp = temp / 10 - (temp / 10) % 1; 
+//     } while (temp > 0);
+
+//     if (sum === num) {
+//         console.log(num);
 //     }
 
-//     let tempNum2 = currentNum;
-//     while (tempNum2 > 0) {
-//         let lastDigit = tempNum2 % 10;
-
-//         let powerValue = 1;
-//         let times = 0;
-//         while (times < digitCount) {
-//             powerValue = powerValue * lastDigit;
-//             times++;
-//         }
-
-//         totalSum = totalSum + powerValue;
-//         tempNum2 = tempNum2 / 10 - (tempNum2 / 10) % 1; 
-//     }
-
-//     if (totalSum === currentNum) {
-//         console.log(currentNum);
-//     }
-
-//     currentNum++;
-// } while (currentNum <= maxNum);
+//     num++;
+// } while (num <= maxNum);
 
 // Example Output (if input is 500):
 // Armstrong numbers up to 500 are:
@@ -104,7 +101,7 @@
 // num = prompt("Enter the numberof terms:");
 // let a = 0, b = 1, nextTerm;
 // i = 1;
-// console.log("Fibonacci Series up to " + num + " terms:");
+// console.log("Fibonacci Series up to " , num , " terms:");
 // while (i <= num) {
 //     console.log(a);
 //     nextTerm = a + b;
