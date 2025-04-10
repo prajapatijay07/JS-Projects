@@ -36,6 +36,4 @@ function showPrev() {
    displayQuote(currentIndex);
 }
 
-setInterval(showNext, 5000);
-
 getRandomQuote();
