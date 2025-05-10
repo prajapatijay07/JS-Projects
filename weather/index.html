@@ -1,58 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="search-box">
-      <i class='bx bxs-map'></i>
-      <input type="text" placeholder="Enter your location" />
-      <button class='bx bx-search'></button>
-    </div>
-
-    <p class="city-hide">city hide</p>
-
-    <div class="weather-box">
-      <div class="box">
-        <div class="info-weather">
-          <div class="weather">
-            <img src="img/cloud.jpg" alt="cloud" title="cloud" />
-            <p class="temperature">0 <span>°C</span></p>
-            <p class="description">Broken Clouds</p>
-          </div>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Search city...">
+            <button><i class="fas fa-search"></i></button>
         </div>
-      </div>
+
+        <div class="weather-box">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon">
+            <div class="temperature">+18<span>°C</span></div>
+            <div class="description">Partly Cloudy</div>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fas fa-tint"></i>
+                <div>
+                    <span>52%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fas fa-wind"></i>
+                <div>
+                    <span>12 km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            <div class="aqi">
+                <i class="fas fa-smog"></i>
+                <div>
+                    <span>Good</span>
+                    <p>Air Quality</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div class="hourly-items">
+                <div class="hourly-item">
+                    <p class="time">16:00</p>
+                    <p class="temp">+25°</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="time">20:00</p>
+                    <p class="temp">+22°</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="time">00:00</p>
+                    <p class="temp">+16°</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="time">04:00</p>
+                    <p class="temp">+14°</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="time">08:00</p>
+                    <p class="temp">+18°</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-days">
+                <div class="forecast-day">
+                    <p class="day">Today</p>
+                    <p class="temp-high">+11°</p>
+                    <p class="temp-low">-2°</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day">Tue</p>
+                    <p class="temp-high">+8°</p>
+                    <p class="temp-low">-1°</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day">Wed</p>
+                    <p class="temp-high">+15°</p>
+                    <p class="temp-low">+5°</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day">Thu</p>
+                    <p class="temp-high">+2°</p>
+                    <p class="temp-low">-3°</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-found">
+            <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="Not Found">
+            <p>City not found</p>
+        </div>
+
+        <div class="city-hide"></div>
     </div>
 
-    <div class="weather-details">
-      <div class="humidity">
-        <i class='bx bx-water'></i>
-        <div class="text">
-          <div class="info-humidity"><span>0%</span></div>
-          <p>Humidity</p>
-        </div>
-      </div>
-      <div class="wind">
-        <i class='bx bx-wind'></i>
-        <div class="text">
-          <div class="info-wind"><span>0Km/h</span></div>
-          <p>Wind Speed</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="not-found">
-      <div class="box">
-        <img src="img/404-status-code.jpg" alt="error" title="error" width="80%" />
-        <p>City not found</p>
-      </div>
-    </div>
-  </div>
-  <script src="js/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
