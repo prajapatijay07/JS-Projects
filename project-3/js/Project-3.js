@@ -53,7 +53,7 @@
 //         do {
 //             power = power * digit;
 //             i++;
-//         } while (i < digits);
+//         } while (i < digits); 
 
 //         sum = sum + power;
 //         temp = temp / 10 - (temp / 10) % 1; 
