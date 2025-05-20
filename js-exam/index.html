@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Exam</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product</h1>
+        <div class="form-container">
+            <h2>Add New Product</h2>
+            <form id="product-form">
+                <input type="text" id="title" placeholder="Product Title" required />
+                <input type="number" id="price" placeholder="Price" required />
+                <input type="text" id="image" placeholder="Image URL" required />
+                <input type="text" id="category" placeholder="Category" required />
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search by Title" oninput="searchProduct()" />
+            <select id="category-filter" onchange="filterByCategory()">
+                <option value="">All Categories</option>
+                <option value="jeans">jeans</option>
+                <option value="top">top</option>
+                <option value="western">western</option>
+            </select>
+            <select id="sort" onchange="sortProducts()">
+                <option value="asc">Price: Low to High</option>
+                <option value="desc">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div id="product-list" class="product-list">
+            <!-- Products will be dynamically displayed here -->
+        </div>
+    </div>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
